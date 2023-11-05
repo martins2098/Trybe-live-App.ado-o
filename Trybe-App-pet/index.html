@@ -1,75 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/dog-face-removebg-preview.png">
-    <link rel="stylesheet" href="style.css">
-    <title>Adoption Pet</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="Nova pasta/dog-face-removebg-preview.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Adote Mais</title>
 </head>
 <body>
-    <header>
-        <div>
-            <h3>AdoteMais</h3>
-            <p>Pet's Felizes , Casas Tranasformadas! </p>
-        </div>
+  <header>
+    <div>
+      <h3>AdoptionPet </h3>
+      <p>de adoção de pet</p>
+    </div>
 
-        <nav>
-            <a href="">Home</a>
-            <a href="">Sobre</a>
-            <a href="">Contato</a>
-        </nav>
-    </header>
+    <nav>
+      <a href="">Home</a>
+      <a href="./sobre.html" target="_blank">Sobre</a>
+      <a href="./contato.html" target="_blank">Contato</a>
+    </nav>
+  </header>
 
-    <main>
-        <aside>
-            <section id="selects">
-                <select name="CategoryPets" id="Category">
-                    <option value="Category">Category</option>
-                </select>
+  <main>
+    <aside>
+      <section id="selects">
+        <select name="petsCategory" id="category">
+          <option value="category">Categoria</option>
+        </select>
+        <select name="petsName" id="name" disabled>
+          <option value="name">Nome</option>
+        </select>
+        <select name="petsBreed" id="breed" disabled>
+          <option value="breed">Raça</option>
+        </select>
+        <select name="petsColor" id="color" disabled>
+          <option value="color">Cor</option>
+        </select>
+        <select name="petsSize" id="size" disabled>
+          <option value="size">Porte</option>
+        </select>
+        <select name="petsTemperament" id="temperament" disabled>
+          <option value="temperament">Temperamento</option>
+        </select>
+      </section>
 
-                <select name="PetsName" id="Name">
-                    <option value="Category">Name</option>
-                </select>
+      <section id="info">
+        <div id="pictureSelected"><img></div>
+        <div id="nameInfo"></div>
+        <div id="birthInfo"></div>
+        <div id="breedInfo"></div>
+        <div id="colorInfo"></div>
+        <div id="sizeInfo"></div>
+        <div id="temperamentInfo"></div>
+      </section>
 
-                <select name="PetsBreed" id="Breed">
-                    <option value="Category">Breed</option>
-                </select>
+      <form action="" method="get"></form>
+    </aside>
 
-                <select name="PetscClor" id="Color">
-                    <option value="Category">Color</option>
-                </select>
+    <section id="pictures">
+      <h4>Clique na foto para detalhes do pet</h4>
+      <div id="images"></div>
+    </section>
+  </main>
 
-                <select name="PetsSize" id="Size">
-                    <option value="Category">Size</option>
-                </select>
-
-                <select name="PetsTemperament" id="Temperament">
-                    <option value="Category">Temperamento</option>
-                </select>
-                
-            </section>
-
-            <section id="info">
-                <div id="pictureSelected"><img src="" alt=""></div>
-                <div id="nameinfo"></div>
-                <div id="birthInfo"></div>
-                <div id="breedinfo"></div>
-                <div id="colorinfo"></div>
-                <div id="sizeinfo"></div>
-                <div id="temperamentinfo"></div>
-            </section>
-
-            <form action=""method="get"></form>
-        </aside>
-
-        <section id="pictures">
-            <h4>Clique na foto para detalhes do Pet</h4>
-            <div id="images"></div>
-        </section>
-    </main>
-
-    <script src="./data.js"></script>
-    <script src="./script.js"></script>
+  <script src="./data.js"></script>
+  <script src="./script.js"></script>
 </body>
 </html>
